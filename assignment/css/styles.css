@@ -1,0 +1,262 @@
+body{ height:100vh; margin:8px; }
+
+header{ min-height: 100px;}
+footer{ min-height: 50px;}
+
+body {
+    background-color: #ffffff;
+    font-family: monospace;
+    display: flex; 
+    flex-direction: column;
+}
+
+header {
+    text-align: center;
+    border-bottom: 3px solid #000;
+}
+
+footer {
+    text-align: center;
+    margin-top:auto;
+    border-top: 3px solid #000;
+}
+
+h1 {
+    font-size: 6.8ch;
+}
+
+.error {
+    color: #ffffff;
+}
+
+.logout {
+    color: rgb(17, 243, 168);
+    text-decoration: none;
+}
+
+a:hover {
+    color: #000;
+}
+
+.form-center {
+    max-width: 350px;
+    width: 40%;
+    min-width: 250px;
+	margin: 10vh auto;
+    background-color: rgb(131, 131, 131);
+    padding: 2%;
+    box-shadow: -3px 3px 5px #000;
+}
+
+.form-center h1 {
+    margin: auto;
+    font-size: 5ch;
+}
+
+.form-center input {
+    border-top: solid 2px #000;
+}
+
+.form-center input::placeholder {
+    font-family: monospace;
+}
+
+.form-center input[type=submit] {
+    /* border-top: none; */
+    border-left: solid 2px #000;
+    border-right: none;
+    border-bottom: none;
+    font-family: monospace;
+    background-color: rgb(17, 243, 168);
+}
+
+.form-center input[type=submit]:active {
+    border-right: solid 2px #000;
+    border-bottom: solid 2px #000;
+    border-top: none;
+    border-left: none;
+    font-family: monospace;
+    background-color: rgb(17, 243, 168);
+}
+
+.form-center a , .search-box a{
+    color: #000;
+    text-decoration: none;
+}
+
+#reserved_books {
+    font-size: 2.2ch;
+}
+
+.form-center a:hover , .search-box a:hover {
+    color: rgb(17, 243, 168);
+}
+
+.search-box {
+    /* width: 21vw; */
+    width: 50%;
+    margin: 4vh auto;
+    margin-bottom: 2.4vh;
+    background-color: rgb(131, 131, 131);
+    padding: 4%;
+    box-shadow: -3px 3px 5px #000;
+}
+
+.search-form form {
+    width: 400px;
+    margin: auto;
+    margin-top: 250px;
+}
+
+.search-form input {
+    padding: 4px 10px;
+    border: 0;
+    font-size: 16px;
+}
+
+.search-form input[type=search] {
+    border-right: none;
+    border-bottom: none;
+    border-top: solid 2px #000;
+    border-left: solid 2px #000;
+    font-family: monospace;
+    font-size: 17px;
+    width: 75%;
+    /* width: 54%; */
+    min-width: 15%;
+}
+
+@media only screen and (max-width: 2148px) {
+    .search-form input[type=search] {
+        width: 70%;
+    }
+}
+
+@media only screen and (max-width: 1920px) {
+    .search-form input[type=search] {
+        width: 65%;
+    }
+}
+
+@media only screen and (max-width: 1400px) {
+    .search-form input[type=search] {
+        width: 55%;
+    }
+}
+
+@media only screen and (max-width: 1010) {
+    .search-form input[type=search] {
+        width: 45%;
+    }
+}
+
+.search-form #categories {
+    font-family: monospace;
+    width: 12%;
+    min-width: 100px;
+    padding: 4px;
+    border: 0;
+    font-size: 16px;
+}
+
+.search-form button {
+    font-size: 17px;
+    padding: 4px 10px;
+    cursor: pointer;
+    background: #ddd;
+}
+
+.search-form button:hover {
+    background: rgb(17, 243, 168);
+}
+
+#filter {
+    font-size: 17px;
+    padding: 4px 10px;
+    background: #ddd;
+}
+
+.main {
+    background-color: rgb(131, 131, 131);
+    padding: 2%;
+    width: 90%;
+    margin: auto;
+    box-shadow: -3px 3px 5px #000;
+}
+
+.book-table {
+    width: 100%;
+}
+
+.book-table th {
+    font-size: 3.4ch;
+}
+
+.book-table td{
+    /* border: solid 2px black; */
+    border-top: solid 2px #000;
+    border-left: solid 2px #000;
+    border-right: none;
+    border-bottom: none;
+    background-color: #ffffff;
+    padding: 5px;
+    padding-top: 40px;
+    font-size: 3ch;
+}
+
+.book-table .yFlag {
+    background-color: #f33333;
+}
+
+.book-table .nFlag {
+    background-color: #59f333;
+}
+
+.book-table .reserve {
+    border: none;
+    background-color: rgb(131, 131, 131);
+    margin: auto;
+}
+
+.reserve a {
+    border-top: solid 2px #000;
+    border-left: solid 2px #000;
+    border-right: none;
+    border-bottom: none;
+    font-size: 1.2ch;
+    padding: 6px;
+    color: #000;
+    float: right;
+    text-decoration: none;
+    font-family: monospace;
+    background-color: rgb(17, 243, 168);
+    margin: auto;
+    margin-bottom: 20%;
+}
+
+.reserve a:hover {
+    background-color: rgb(22, 226, 158);
+}
+
+.reserve a:active {
+    border-right: solid 2px #000;
+    border-bottom: solid 2px #000;
+    border-top: none;
+    border-left: none;
+}
+
+.pagination {
+    padding: 0;
+    list-style-type: none;
+    font-size: 16px;
+}
+
+.pagination li {
+    display: inline;
+}
+
+#filter {
+    font-size: 17px;
+    padding: 4px 10px;
+    background: #ddd;
+}
